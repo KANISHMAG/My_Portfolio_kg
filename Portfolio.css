@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #083030;
     color:#000000;
@@ -11,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/bg.jpg);
+    background-image: url(images/My\ Image.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -132,11 +135,11 @@ span{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 28%;
+    flex-basis: 36%;
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 150px;
+    border-radius: 110px;
 }
 .about-col-2{
     flex-basis: 100%;
@@ -209,13 +212,13 @@ span{
 .projects-list div h2{
     font-size: 25px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .projects-list div a{
     text-decoration: none;
     color: #a8e0aa;
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: 1px;
     display: inline-block;
 }
 .projects-list div:hover{
@@ -241,29 +244,44 @@ div h5{
 .contact p i{
     color:#3880d2;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 30px;
 }
 .social-icons{
     margin-top: 20px;
+    text-align: center;
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     margin-right: 15px;
-    color:#3880d2;
+    color:#1bb0b0;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color:#2ecc71;
+    color:#f6fcfd;
     transform: translateY(-5px);
 }
 .btn.btn2{
-    display: inline-block;
-    background: #4b0d33;
+    display:inline-block;
+    background:#0f0f0f;
+    font-size: 20px;
+    font-style: bold;
+    color:  #1bb0b0;
 }
 nav .fas{
     display: none;
+}
+.copyright{
+    width: 100%;
+    text-align: right;
+    padding: 5px 0;
+    background:#38b5a0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright{
+    color:#3e4344
 }
 @media only screen and (max-width: 600px){
     #header{
@@ -284,11 +302,12 @@ nav .fas{
         background: #14848b;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
     nav ul li{
         display: block;
@@ -300,5 +319,26 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
 }
-
