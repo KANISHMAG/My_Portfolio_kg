@@ -127,7 +127,7 @@ span{
     transition: .4s;
 }
 #about{
-    padding: 200px 0;
+    padding: 15px 0;
     color: #ebf2f0;
 }
 .row{
@@ -139,8 +139,9 @@ span{
     flex-basis: 36%;
 }
 .about-col-1 img{
-    width: 100%;
-    border-radius: 100px;
+    height: auto;
+    max-width: 55%;
+    border-radius: 75px;
 }
 .about-col-2{
     flex-basis: 100%;
@@ -228,7 +229,7 @@ span{
     transform: translateY(-10px);
 }
 #works{
-    padding: 200px 0;
+    padding: 15px 0;
     color: #ebf2f0;
 }
 div h5{
@@ -262,7 +263,7 @@ div h5{
 .btn.btn2{
     display:inline-block;
     background:#0f0f0f;
-    font-size: 20px;
+    font-size: 25px;
     font-style: bold;
     color:  #1bb0b0;
 }
