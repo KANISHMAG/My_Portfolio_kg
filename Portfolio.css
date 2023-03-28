@@ -16,10 +16,10 @@ body{
     height: 100vh;
     background-image: url(images/My\ Image.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: unset;
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px 9%;
 }
 nav{
     position: fixed;
@@ -39,7 +39,8 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color:  #14848b;
+    color:  #5f7777;
+    background-color: #083030;
     text-decoration: none;
     font-size: 18px;
     padding: 7px 13px;
@@ -80,7 +81,7 @@ header{
     justify-content: space-between;
 }
 .container{
-    padding-top: 190px;
+    padding-top: 10px;
 }
 .container .hero-text{
     margin-bottom: 40px;
@@ -139,10 +140,11 @@ span{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 110px;
+    border-radius: 100px;
 }
 .about-col-2{
     flex-basis: 100%;
+    line-height: 2.5;
 }
 .sub-title{
     font-size: 40px;
@@ -238,13 +240,8 @@ div h5{
 .contact{
     flex-basis: 35%;
 }
-.contact p{
+.contact-titles{
     margin-top: 30px;
-}
-.contact p i{
-    color:#3880d2;
-    margin-right: 15px;
-    font-size: 30px;
 }
 .social-icons{
     margin-top: 20px;
