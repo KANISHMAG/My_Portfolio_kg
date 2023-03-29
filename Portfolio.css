@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/My\ Image.jpg);
+    background-image: url(images/bgimg.png);
     background-size: cover;
     background-position: unset;
 }
@@ -39,7 +39,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color:  #5f7777;
+    color:  #7a9696;
     background-color: #083030;
     text-decoration: none;
     font-size: 18px;
@@ -67,7 +67,7 @@ nav ul li a:hover::after{
 .hero-text{
     width: 100%;
     height: 100%;
-    min-height: 15vh;
+    min-height: 10vh;
     background: linear-gradient(rgba(13, 170, 37, 0.548),rgba(40, 165, 242, 0.575));
     background-size: cover;
     background-position: center;
