@@ -48,7 +48,7 @@ nav ul li a{
     position: relative;
 }
 a.active,a:hover{
-    background: #565a5e;
+    background:#083030;
     transition: .5s;
 }
 nav ul li a::after{
@@ -208,6 +208,7 @@ span{
     background: #8abe8a;
     padding: 40px;
     font-size: 18px;
+    color:#0e5454;
     font-weight: 300;
     border-radius: 50px;
     transition: background 0.5s, transform 0.5s;
@@ -234,6 +235,12 @@ span{
 }
 div h5{
     font-size: 22px;
+    color: #8abe8a;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+div h6{
+    font-size: 18px;
     color: #8abe8a;
     font-weight: 500;
     margin-bottom: 15px;
