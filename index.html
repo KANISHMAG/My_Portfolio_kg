@@ -8,45 +8,104 @@
     <link rel="stylesheet" href="Portfolio.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
+	<style>
+		h1 {
+			color: green;
+		}
+		ul li {
+			list-style: square;
+		}
+		ul li::marker {
+			animation-name: GFG;
+			animation-duration: 0.5s;
+			animation-fill-mode:forwards;
+		}
+		ul li:nth-child(1)::marker {
+			animation-delay: 0.5s;
+		}
+		ul li:nth-child(2)::marker {
+			animation-delay: 0.7s;
+		}
+		ul li:nth-child(3)::marker {
+			animation-delay: 0.11s;
+		}
+		ul li:nth-child(4)::marker {
+			animation-delay: 0.9s;
+		}
+		ul li:nth-child(5)::marker {
+			animation-delay: 1.1s;
+		}
+        ul li:nth-child(6)::marker {
+			animation-delay: 0.13s;
+		}
+        ul li:nth-child(7)::marker {
+			animation-delay: 1.3s;
+		}
+        ul li:nth-child(8)::marker {
+			animation-delay: 1.5s;
+		}
+        ul li:nth-child(9)::marker {
+			animation-delay: 0.15s;
+		}
+		@keyframes GFG {
+			from {
+				font-size: 12px;
+			}
+			to {
+				font-size: 30px;
+				color: green;
+			}
+		}
+    </style>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+    </div>
 <body>
     <section = "home">
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul id="sidemenu"><strong>
-                    <li><a href="#header"><u>Home</u></a></li>
-                    <li><a href="#about"><u>About</u></a></li>
-                    <li><a href="#projects"><u>Projects</u></a></li>
-                    <li><a href="#works"><u>Works</u></a></li>
-                    <li><a href="#contact"><u>Contact</u></a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i></strong></ul>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </div></div> 
-            </div>
-            </nav>
-            <div class="home">
+    <nav>
+        <div class="navbar">
+          <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</u></a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+              <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+          </ul>
+        </div>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+      <section class="home" id="home">
+        <div class="home-content">
             <div class="container">
-            <div class="hero-text">
-                <h3><b>Hi,There!</b></h3>
-                <i><h1>I'm  <span class = "input"></span></i></h1>
-                <p><b>I'm trying to manage myself, not just my portfolio!</b></p>
-            </div>
-            </div>
-            </div>
-        </section>
+                <div class="hero-text">
+                    <h3><b>Hi! Just a friendly little hello from me to you!</b></h3>
+                    <i><h1>I'm  <span class = "input"></span></i></h1>
+                    <p><b>I'm trying to manage myself, not just my portfolio!</b></p>
+                </div>
+                </div>
+        </div>
+      </section>
     <section = "about">
     <div id="about">
     <div class="container">
-    <div class="row">
-    <div class="about-col-1">
-        <img src = "images/mypic.jpg">
-    </div>
-    <div>
-    <div class="about-col-2">
-        <h1 class="sub-title"><u>About Me</u></h1>
-            <p><i><b>Career Intention:</b>&nbsp&nbspMy ultimate motto is to secure a challenging position in a reputable
-                        organization to leverage my learnings and skills and to get an opportunity where I can make the best of my
-                        potential and contribute to the organization's growth.</p></i></div>
+        <h1 class="sub-title">About Me</h1>
+        <div class="aboutme">
+            <div class="image">
+              <img src=  "images/mypic.jpg">
+            </div>
+            <div class="text">
+                <p><b>Hello folks! I'm KANISHMA G, I'm from Coimbatore.<br>
+                    💫I'm a logical and organized ECE graduate with a strong passion towards engineering. I'm looking for a career which can sharpen my skills and knowledge where I can have a good scope for learning and implementing new technology.<br>
+                    💫My ultimate motto is to get an opportunity where I can make the best of my potential and contribute to the organization's amelioration.</p>
+            </div>
+          </div>
             <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')"><i><b>Academic Credentials</i></b></p>
                         <p class="tab-links" onclick="opentab('technicalskills')"><i><b>Technical Prowess</i></b></p>
@@ -58,9 +117,9 @@
             </div>
             <div class="tab-contents active-tab" id="education">
                         <ul>
-                            <li><span>2018 - SSLC</span><br>SRC Memorial Matriculation Higher Secondary School<br>Grade: 97.80%</li>
-                            <li><span>2020 - HSC</span><br>SRC Memorial Matriculation Higher Secondary School<br>Grade: 82.33%</li>
-                            <li><span>2024 - B.E (ECE)</span><br>Bannari Amman Institute of Technology<br>Grade: 9.09 CGPA</li>
+                            <li><span>2018 - SSLC</span><br><a class = "works-links" href= "https://g.co/kgs/nsT7cV" target="_blank">SRC Memorial Matriculation Higher Secondary School</a><br>Grade: 97.80%</li>
+                            <li><span>2020 - HSC</span><br><a class = "works-links" href= "https://g.co/kgs/nsT7cV" target="_blank">SRC Memorial Matriculation Higher Secondary School</a><br>Grade: 82.33%</li>
+                            <li><span>2024 - B.E (ECE)</span><br><a class = "works-links" href= "https://www.bitsathy.ac.in/" target="_blank">Bannari Amman Institute of Technology</a><br>Grade: 9.09 CGPA</li>
                         </ul>
             </div>
             <div class="tab-contents" id="technicalskills">
@@ -127,7 +186,7 @@
     <section = "projects">
     <div id="projects">
     <div class="container">
-            <h1 class="sub-title"><u>My Projects</u></h1>
+            <h1 class="sub-title">My Projects</h1>
             <div class="projects-list">
                 <div>
                     <h2><b><i>AUTOMATIC IRRIGATION SYSTEM BASED ON WEATHER CONDITION</i></h2>
@@ -154,7 +213,7 @@
         <div class="container">
             <div class="row">
                 <div class="works-col-1">
-                    <h1 class="sub-title"><u>My Works</u></h1>
+                    <h1 class="sub-title">My Works</h1>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('internship')"><b><i>Internship</i></b></p>
                         <p class="tab-links" onclick="opentab('certifications')"><b><i>Certifications</i></b></p>
@@ -163,53 +222,53 @@
                     </div>
                     <div class="tab-contents active-tab" id="internship">
                         <ul>
-                            <h5><i>VLSI DESIGN AND EMBEDDED IOT PROGRAMMING</i></h5><br>
-                                <p><li><span>Company Name:</span> Tessolve Semiconductors, Bengaluru</li>
+                            <h5><i><a class = "works-links" href= "https://www.linkedin.com/posts/kanishma-g-563040214_internship-tessolve-semiconductors-activity-6966802826211594240-61aL?utm_source=share&utm_medium=member_desktop" target="_blank">VLSI DESIGN AND EMBEDDED IOT PROGRAMMING</a></i></h5><br>
+                                <p><li><span>Company Name:&nbsp;</span><a class = "intern-links" href= "https://www.tessolve.com/" target="_blank">Tessolve Semiconductors, Bengaluru</a></li>
                                 <li><span>Duration:</span> 21st Jul 2022 to 11th Aug 2022 (15 Days)</li>
                                 <li><span>Key Responsibilities:</span></li>
-                                ~ Intern in the specialization of VLSI Design Flow, Advanced
+                                ✨ Intern in the specialization of VLSI Design Flow, Advanced
                                 technologies in VLSI and IOT systems.<br>
-                                ~ Worked on VLSI Design flow and Real-time IOT projects integrated
+                                ✨ Worked on VLSI Design flow and Real-time IOT projects integrated
                                 with sensors.
                                 <li><span>Skills:</span> Internet of Things (IoT), Very-Large-Scale Integration (VLSI), Embedded Systems</li></p>
                         </ul>
                     </div>
                     <div class="tab-contents" id="certifications">
                         <ul>
-                            <li><span>Introduction to IOT (2021)</span></li>
+                            <li><span><a class = "works-links" href= "https://archive.nptel.ac.in/content/noc/NOC21/SEM2/Ecertificates/106/noc21-cs63/Course/NPTEL21CS63S3336013503146153.jpg" target="_blank">Introduction to IOT (2021)</a></span></li>
                             <p>Issued Organization: NPTEL<br>
                             Skills: Internet of Things (IOT), Basic Programming</p>
-                            <li><span>Introduction to Cybersecurity (2021)</span></li>
+                            <li><span><a class = "works-links" href= "https://www.linkedin.com/posts/kanishma-g-563040214_onlinecourse-activity-6827294182848151552-pb4u?utm_source=share&utm_medium=member_desktop" target="_blank">Introduction to Cybersecurity (2021)</a></span></li>
                             <p>Issued Organization: CISCO<br>
                             Skills: Machine Learning (ML), Artificial Intelligence (AI)</p>
-                            <li><span>Qt 6 Core Beginners with C++ (2021)</span></li>
+                            <li><span><a class = "works-links" href= "https://www.linkedin.com/posts/kanishma-g-563040214_onlinecourse-activity-6827292225014161408-5NLQ?utm_source=share&utm_medium=member_desktop" target="_blank">Qt 6 Core Beginners with C++ (2021)</a></span></li>
                             <p>Issued Organization: UDEMY<br>
                             Skills: CPP</p>
-                            <li><span>The Joy of Computing using Python (2022)</span></li>
+                            <li><span><a class = "works-links" href= "https://archive.nptel.ac.in/content/noc/NOC22/SEM2/Ecertificates/106/noc22-cs122/Course/NPTEL22CS122S5450105010036772.jpg" target="_blank">The Joy of Computing using Python (2022)</a></span></li>
                             <p>Issued Organization: NPTEL<br>
                             Skills: Python</p>
                         </ul>
                     </div>
                     <div class="tab-contents" id="achievements">
                         <ul>
-                            <li><h6><span>TECHNINJA'21 (Sri Sai Ram Engineering College)</span></li></h6>
+                            <li><span><a class = "works-links" href= "https://www.linkedin.com/posts/kanishma-g-563040214_paperpresentation-activity-6851443830940598273-bX0O?utm_source=share&utm_medium=member_desktop"  target="_blank">TECHNINJA'21 (Sri Sai Ram Engineering College)</a></span></li>
                             <p>~ 1st Prize in Paper Presentation</p>
-                            <li><h6><span>HACKAVERSUMM'22 (Maharishi Marakandeshwar University)</span></li></h6>
+                            <li><span><a class = "works-links" href = "https://www.linkedin.com/posts/kanishma-g-563040214_hackaversumm22-hackaversumm-innovatorz-activity-6979472944511029248-pSaH?utm_source=share&utm_medium=member_desktop" target="_blank">HACKAVERSUMM'22 (Maharishi Marakandeshwar University)</a></span></li>
                             <p>~ I Led my team to finals</p>
-                            <li><h6><span>HACKODISHA 2.0 (NIT Rourkela)</span></h6>
+                            <li><span><a class = "works-links" href = "https://www.linkedin.com/posts/kanishma-g-563040214_devfolio-activity-6995756974424408064-KF7j?utm_source=share&utm_medium=member_desktop" target="_blank">HACKODISHA 2.0 (NIT Rourkela)</a></span></li>
                             <p>~ Qualified Finalist</p>
                         </ul>
                     </div>
                     <div class="tab-contents" id="membership">
                         <ul>
-                            <li><span>Member of Institution of Electronics and Telecommunication Engineers (IETE)</span></li>
+                            <li><span><a class = "works-links" href = "/images/iete.pdf" target="_blank">Member of Institution of Electronics and Telecommunication Engineers (IETE)</a></span></li>
                             <p>~ From July 2021</p>
                     </div>
                     </section>
                     <section = "contact">
                     <div id="contact">
                         <div class="container">
-                            <h2 class="sub-title"><u>Contact</u></h2>
+                            <h1 class="sub-title">Contact Me</h1>
                             <div class="contact-titles">
                             <p><i class="fas fa-paper-plane"></i>&nbspkanishma0209@gmail.com<br>&nbsp&nbsp&nbsp&nbsp&nbspkanishma.ec20@bitsathy.ac.in</p>
                             <p><i class="fas fa-phone-square-alt"></i>&nbsp9894830794</p>
@@ -221,41 +280,81 @@
                         <a href="https://twitter.com/fruity0209?t=BLsUtbfHqBt3mq2ZgYCvUA&s=09" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
                         <a href="https://instagram.com/fruity0209?igshid=YmJhNjkzNzY=" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                         </div>
-                        <a href="images/Resume.pdf" download class="btn btn2" target="_blank"><b>Download CV</b></a>
+                        <div class="btn-btn2">
+                        <a href="images/Resume.pdf" download class="btn-btn2" target="_blank"><b>Download CV</b></a></div>
                         <div class="copyright">
-                            <p><b>Made by Kanishma G</b>&nbsp<i class="fa-solid fa-heart"></i></p>
+                            <p><b>Designed by Kanishma G</b>&nbsp<i class="fa-solid fa-heart"></i></p>
                         </div>
-                    </div></section>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".input",{
-            strings:["KANISHMA G", "an ECE Engineer!"],
-            typespeed: 70,
-            backSpeed: 60,
-            loop: true
-        })
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
+                        </div></section>
+                        <script type="text/javascript" src="js/script.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                        <script>
+                        var typed = new Typed(".input",{
+                            strings:["KANISHMA G", "an ECE Engineer!"],
+                            typespeed: 70,
+                            backSpeed: 60,
+                            loop: true
+                        })
+                        var tablinks = document.getElementsByClassName("tab-links");
+                        var tabcontents = document.getElementsByClassName("tab-contents");
+                        function opentab(tabname){
+                            for(tablink of tablinks){
+                                tablink.classList.remove("active-link");
+                            }
+                            for(tabcontent of tabcontents){
+                                tabcontent.classList.remove("active-tab");
+                            }
+                            event.currentTarget.classList.add("active-link");
+                            document.getElementById(tabname).classList.add("active-tab");
+                            }
+                            </script>
+                            <script>
+                            var sidemenu = document.getElementById("sidemenu");
+                            function openmenu(){
+                                sidemenu.style.right = "0";
+                            }
+                            function closemenu(){
+                                sidemenu.style.right = "200px";
+                            }
+                let nav = document.querySelector("nav");
+                let scrollBtn = document.querySelector(".scroll-button a");
+                console.log(scrollBtn);
+                let val;
+                window.onscroll = function() {
+                if(document.documentElement.scrollTop > 20){
+                    nav.classList.add("sticky");
+                    scrollBtn.style.display = "block";
+                }else{
+                    nav.classList.remove("sticky");
+                    scrollBtn.style.display = "none";
+                }
+                }
+                let body = document.querySelector("body");
+                let navBar = document.querySelector(".navbar");
+                let menuBtn = document.querySelector(".menu-btn");
+                let cancelBtn = document.querySelector(".cancel-btn");
+                menuBtn.onclick = function(){
+                navBar.classList.add("active");
+                menuBtn.style.opacity = "0";
+                menuBtn.style.pointerEvents = "none";
+                body.style.overflow = "hidden";
+                scrollBtn.style.pointerEvents = "none";
+                }
+                cancelBtn.onclick = function(){
+                navBar.classList.remove("active");
+                menuBtn.style.opacity = "1";
+                menuBtn.style.pointerEvents = "auto";
+                body.style.overflow = "auto";
+                scrollBtn.style.pointerEvents = "auto";
+                }
+                let navLinks = document.querySelectorAll(".menu li a");
+                for (var i = 0; i < navLinks.length; i++) {
+                navLinks[i].addEventListener("click" , function() {
+                    navBar.classList.remove("active");
+                    menuBtn.style.opacity = "1";
+                    menuBtn.style.pointerEvents = "auto";
+                });
             }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "200px";
-        }
-    </script>
-</body>
-</html>
+                    </script>
+                        </body>
+                        </html>
