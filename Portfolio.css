@@ -416,10 +416,10 @@ nav .fas{
   margin-top: 20px;
   margin-left: 15px;
   }
-  .home{
+   .home{
     background: url("/images/bgmobile.jpg");
     height: 100vh;
-    width: 300%;
+    width: 100%;
     background-size: cover;
   }
   .tab-titles{
@@ -428,9 +428,9 @@ nav .fas{
   color:#1686af;
   }
   .home .hero-text{
-    margin-top: 500px;
-    margin-left: 190px;
-    width: 48%;
+    margin-top: 400px;
+    margin-left: 50px;
+    width: 100%;
   }
   .container .hero-text{
     margin-bottom: 10px;
@@ -438,9 +438,8 @@ nav .fas{
   .container .hero-text h1{
     font-size: 25px;
     margin: 10px 0px 10px;
-  }
-  .container .hero-text span{
+}
+ .container .hero-text span{
         font-size: 25px;
   }
-
 }
