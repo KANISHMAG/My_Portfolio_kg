@@ -464,4 +464,7 @@ nav .fas{
     position: absolute;
     bottom: -1px;
 }
+ .aboutme img{
+    max-width: 70%;
+}
 }
