@@ -124,7 +124,7 @@ nav .menu-btn,
 .home{
     height: 100vh;
     width: 100%;
-    background: url("/images/bgimg.jpg") no-repeat;
+    background: url("images/bgimg.png") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -417,7 +417,7 @@ nav .fas{
   margin-left: 10px;
   }
   .home{
-    background: url("/images/bgmobile.jpg");
+    background: url("images/bgmobile.png");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -443,7 +443,7 @@ nav .fas{
         font-size: 25px;
   }
   nav .navbar{
-    margin-left: 30px;
+    margin-left: 25px;
     width: 100%;
     align-items: center;
   }
@@ -464,7 +464,7 @@ nav .fas{
     position: absolute;
     bottom: -1px;
 }
- .aboutme img{
+.aboutme img{
     max-width: 70%;
 }
 }
