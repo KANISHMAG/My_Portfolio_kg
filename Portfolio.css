@@ -410,13 +410,13 @@ nav .fas{
   grid-gap: 30px;
   }
   .social-icons{
-  margin-left: 110px;
+  margin-left: 80px;
   }
   .btn-btn2{
-  margin-top: 20px;
-  margin-left: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
   }
-   .home{
+  .home{
     background: url("/images/bgmobile.jpg");
     height: 100vh;
     width: 100%;
@@ -442,4 +442,26 @@ nav .fas{
  .container .hero-text span{
         font-size: 25px;
   }
+  nav .navbar{
+    margin-left: 30px;
+    width: 100%;
+    align-items: center;
+  }
+  .navbar .menu a{
+    font-size: 15px;
+}
+.text {
+    padding-bottom: 40px;
+}
+.tab-contents{
+    margin-top: 40px;
+}
+.tab-titles{
+    display:contents;
+    line-height: 2.5;
+    }
+.tab-links::after{
+    position: absolute;
+    bottom: -1px;
+}
 }
