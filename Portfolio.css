@@ -33,7 +33,7 @@ body {
   }
   .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, rgb(53, 46, 68) 50%, rgb(5, 38, 66) 50%);
+    background-image: linear-gradient(-60deg, rgb(62, 43, 67) 50%, rgb(5, 38, 66) 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -124,7 +124,7 @@ nav .menu-btn,
 .home{
     height: 100vh;
     width: 100%;
-    background: url("images/bgimg.png") no-repeat;
+    background: url("images/bgimg.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -189,7 +189,7 @@ nav .menu-btn,
 }
 #about{
     padding: 30px 0;
-    color:#a71b8d;
+    color:#d52db6;
 }
 .aboutme {
     display: flex;
@@ -214,8 +214,10 @@ nav .menu-btn,
 .sub-title{
     font-size: 40px;
     font-weight: 600;
-    color:  #197aba;
-    text-shadow: 3px 2px #0a1a6c;
+    background-clip: unset;
+    background: -webkit-linear-gradient(rgb(63, 100, 220), rgb(144, 11, 139));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform:uppercase;    
 }
 .sub-title :hover{
@@ -302,7 +304,7 @@ nav .menu-btn,
 }
 #works{
     padding: 40px 0;
-    color:white;
+    color:#218ed7;
 }
 #works  a:hover{
     color:#218ed7;
@@ -329,7 +331,7 @@ div h5{
 }
 .contact-titles{
     margin-top: 30px;
-    color: #af1c6f;
+    color:#dc3d97;
 }
 .contact-titles :hover{
     color:#218ed7;
@@ -417,7 +419,7 @@ nav .fas{
   margin-left: 10px;
   }
   .home{
-    background: url("images/bgmobile.png");
+    background: url("images/bgmobile.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -466,5 +468,13 @@ nav .fas{
 }
 .aboutme img{
     max-width: 70%;
+}
+nav.sticky{
+    padding: 15px 0;
+}
+.navbar .menu a{
+    font-size: 15px;
+    font-weight: 800;
+    padding: 16px 0;
 }
 }
