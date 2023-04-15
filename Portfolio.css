@@ -25,13 +25,13 @@ body{
     background: #0c0c0c;
     color:#000000;
 }
-html {
+html{
     height:100%;
-  }
-body {
+}
+body{
     margin:0;
-  }
-  .bg {
+}
+.bg{
     animation:slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, rgb(62, 43, 67) 50%, rgb(5, 38, 66) 50%);
     bottom:0;
@@ -41,25 +41,25 @@ body {
     right:-50%;
     top:0;
     z-index:-1;
-  }
-  .bg2 {
+}
+.bg2{
     animation-direction:alternate-reverse;
     animation-duration:4s;
-  }
-  .bg3 {
+}
+.bg3{
     animation-duration:5s;
-  }
-  h1 {
+}
+h1{
     font-family:monospace;
-  }
-  @keyframes slide {
-    0% {
-      transform:translateX(-25%);
-    }
-    100% {
-      transform:translateX(25%);
-    }
-  }
+}
+@keyframes slide {
+0%{
+    transform:translateX(-25%);
+}
+100%{
+    transform:translateX(25%);
+}
+}
 .container{
     padding: 10px 9%;
 }
@@ -183,9 +183,9 @@ nav .menu-btn,
     transition: all 0.4s ease;
 }
 .home .button button:hover{
-        border-color: #4070f4;
-        background-color: #fff;
-        color: #4070f4;
+    border-color: #4070f4;
+    background-color: #fff;
+    color: #4070f4;
 }
 #about{
     padding: 30px 0;
@@ -384,72 +384,72 @@ nav .fas{
 /*mobile view----------------------------------------*/
 
 @media (max-width: 600px){
-  .container{
+.container{
     width: 100%;
-  }
-  .aboutme{
+}
+.aboutme{
     justify-content: center;
     flex-direction: column;
-  }
-  .aboutme{
+}
+.aboutme{
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-  .aboutme img{
+}
+.aboutme img{
     height: auto;
     max-width: 95%;
     border-radius: 45px;
     margin-top: 35px;
-  }
-  .text {
+}
+.text {
     font-size: 17px;
     padding-left: 40px;
     text-align: justify;
     padding-top: 40px;
-  }
-  .projects-list{
+}
+.projects-list{
   grid-gap: 30px;
-  }
-  .social-icons{
+}
+.social-icons{
   margin-left: 80px;
-  }
-  .btn-btn2{
+}
+.btn-btn2{
   margin-top: 15px;
   margin-left: 10px;
-  }
-  .home{
+}
+.home{
     background: url("images/bgmobile.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
-  }
-  .tab-titles{
+}
+.tab-titles{
   display: flex;
   margin: 5px 0 4px;
   color:#1686af;
-  }
-  .home .hero-text{
-    margin-top: 400px;
-    margin-left: 50px;
+}
+.home .hero-text{
+    margin-top: 450px;
+    margin-left: 40px;
     width: 100%;
-  }
-  .container .hero-text{
+}
+.container .hero-text{
     margin-bottom: 10px;
-  }
-  .container .hero-text h1{
+}
+.container .hero-text h1{
     font-size: 25px;
     margin: 10px 0px 10px;
 }
- .container .hero-text span{
-        font-size: 25px;
-  }
-  nav .navbar{
+.container .hero-text span{
+    font-size: 25px;
+}
+nav .navbar{
     margin-left: 25px;
     width: 100%;
     align-items: center;
-  }
-  .navbar .menu a{
+}
+.navbar .menu a{
     font-size: 15px;
 }
 .text {
@@ -461,7 +461,7 @@ nav .fas{
 .tab-titles{
     display:contents;
     line-height: 2.5;
-    }
+}
 .tab-links::after{
     position: absolute;
     bottom: -1px;
@@ -470,7 +470,7 @@ nav .fas{
     max-width: 70%;
 }
 nav.sticky{
-    padding: 15px 0;
+    padding: 12px 0;
 }
 .navbar .menu a{
     font-size: 15px;
